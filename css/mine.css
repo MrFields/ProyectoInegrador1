@@ -1,0 +1,100 @@
+html{
+    scroll-behavior: smooth;
+}
+#nav{
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+    z-index: 999;
+}
+main{
+    padding-top: 7rem;
+}
+.relative{
+    position: relative;
+}
+#hobbies{
+    position: absolute;
+    bottom: 0;
+    height: 6rem;
+}
+
+.inline-block-fix {
+    display: inline-block;
+}
+
+hr {
+    font-weight: bold;
+}
+
+.logo-size {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
+    border: 3px solid rgb(20, 20, 133);
+}
+
+
+article.school-component {
+    border: 1px solid black;
+    box-shadow: black .2 0 0 .5rem;
+}
+
+.school-component-height {
+    height: 18rem;
+}
+
+.word-break {
+    word-break: break-all;
+}
+
+.map {
+    background: gray;
+}
+
+
+.table {
+    display: table;
+}
+
+.table-cell {
+    display: table-cell;
+}
+
+.align-middle {
+    vertical-align: middle;
+}
+
+#links a {
+    cursor: pointer;
+    opacity: 1;
+    transition-duration: .5s;
+}
+
+#links a:hover {
+opacity: .5;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transition-duration: .5s;
+}
+
+#insta{
+    width: 6.5rem !important; 
+    height: 6.5rem !important;  
+}
+
+#links img{
+    width: 5rem; 
+    height: 5rem;
+}
+
+header a{
+    cursor: pointer;  
+}
+
+#nombre{
+    color: ghostwhite;
+    font-weight: bold;
+}
