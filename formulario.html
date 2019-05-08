@@ -10,6 +10,7 @@
     <script src="js/jquery.js"></script>
     <script src="css/bootstrap1.js"></script>
     <script src="css/bootstrap2.js"></script>
+    <script> $('.dropdown-toggle').dropdown()</script>
     <title>Formulario</title>
 </head>
 
@@ -46,10 +47,20 @@
         </nav>
     </header>
     <main>
-        
+            <div class="dropdown show">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tramites
+                          </button>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="https://www.google.com/">Inscripcion para Constanicia Empleador</a>
+                      <a class="dropdown-item" href="https://www.google.com/">Visa Temporal por Oferta de Trabajo</a>
+                      <a class="dropdown-item" href="https://www.google.com/">Visa Temporal por Unidad Familiar</a>
+                    </div>
+                  </div>
+               
     </main>
     <footer></footer>
-
 </body>
 
 </html>
