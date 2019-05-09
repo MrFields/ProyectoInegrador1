@@ -15,6 +15,11 @@
             $(".dropdown-toggle").dropdown();
         });
     </script>
+    <script type="text/javascript">
+        function submitform() {
+            document.forms["myform"].submit();
+        }
+    </script>
     <title>Formulario</title>
 </head>
 
@@ -87,13 +92,14 @@
                 <h3>Favor de proporcionar la informacion siguiente</h3>
             </div>
             <form action="mailto:dm.danmarlo@gmail.com" method="post" id='myform'>
-                    <div class="form-group">
-                      <label for="exampleFormControlFile1">Example file input</label>
-                      <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                    </div>
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Acta constitutiva y sus modificaciones</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+                <input type="submit" class="btn btn-info" href="javascript: submitform();">
             </form>
 
-           <a href=""></a> <button type="button" class="btn btn-info">Enviar</button></a>
+    
         </section>
 
 
