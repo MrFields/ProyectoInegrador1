@@ -10,6 +10,7 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap1.js"></script>
     <script src="js/bootstrap2.js"></script>
+    <script src="js/main.js"></script>
     <script>
         $(document).ready(function () {
             $(".dropdown-toggle").dropdown();
@@ -62,8 +63,8 @@
                 Tramites
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="https://www.google.com/">Inscripcion para Constanicia Empleador</a>
-                <a class="dropdown-item" href="https://www.google.com/">Visa Temporal por Oferta de Trabajo</a>
+                <a class="dropdown-item" onclick="CE()">Inscripcion para Constanicia Empleador</a>
+                <a class="dropdown-item" onclick="VTOT()">Visa Temporal por Oferta de Trabajo</a>
                 <a class="dropdown-item" href="https://www.google.com/">Visa Temporal por Unidad Familiar</a>
                 <a class="dropdown-item" href="https://www.google.com/">Cambio de Condición de residencia temporal
                     estudiante a residente temporal con permiso de trabajo</a>
@@ -88,18 +89,10 @@
                     dignissim erat sed sagittis tempor. Donec congue tortor vitae nunc accumsan lacinia.
                 </p>
             </div>
-            <div>
-                <h3>Favor de proporcionar la informacion siguiente</h3>
-            </div>
-            <form action="mailto:dm.danmarlo@gmail.com" method="post" id='myform'>
-                <div class="form-group">
-                    <label for="exampleFormControlFile1">Acta constitutiva y sus modificaciones</label>
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                </div>
-                <input type="submit" class="btn btn-info" href="javascript: submitform();">
-            </form>
+            
+            <div id="archivos">
 
-    
+            </div>
         </section>
 
 

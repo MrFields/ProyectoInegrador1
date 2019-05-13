@@ -28,7 +28,10 @@ main{
 hr {
     font-weight: bold;
 }
-
+.negritas
+{
+    font-weight:bold;
+}
 .logo-size {
     width: 5rem;
     height: 5rem;
