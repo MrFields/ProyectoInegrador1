@@ -1,45 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto"');
-html{
+@import url('https://fonts.googleapis.com/css?family=Mukta|Roboto');
+@import url("font-awesome.min.css");
+
+html {
     scroll-behavior: smooth;
-}
-#nav{
-    position: fixed;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    top: 0;
-    z-index: 999;
-}
-main{
-    padding-top: 7rem;
-}
-.relative{
-    position: relative;
-}
-#hobbies{
-    position: absolute;
-    bottom: 0;
-    height: 6rem;
+
 }
 
-.inline-block-fix {
-    display: inline-block;
+body {
+    background: rgba(192, 192, 192, 0.75);
+}
+
+p {
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.2rem;
+}
+
+main {
+    padding-top: 7rem;
 }
 
 hr {
     font-weight: bold;
 }
-.negritas
-{
-    font-weight:bold;
-}
-.logo-size {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 5rem;
-    border: 3px solid rgb(20, 20, 133);
-}
-
 
 article.school-component {
     border: 1px solid black;
@@ -58,7 +40,6 @@ article.school-component {
     background: gray;
 }
 
-
 .table {
     display: table;
 }
@@ -71,6 +52,151 @@ article.school-component {
     vertical-align: middle;
 }
 
+.relative {
+    position: relative;
+}
+
+.inline-block-fix {
+    display: inline-block;
+}
+
+.negritas {
+    font-weight: bold;
+}
+
+.logo-size {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
+    border: 3px solid rgb(20, 20, 133);
+}
+
+.copyright {
+    color: #999;
+    font-size: 0.9em;
+    font-weight: bold;
+    line-height: 1em;
+    margin: 2em 0 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul.icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.icons li {
+    display: inline-block;
+    padding: 0 1.25em 0 0;
+}
+
+ul.icons li:last-child {
+    padding-right: 0;
+}
+
+ul.icons li .icon {
+    color: inherit;
+}
+
+ul.icons li .icon:before {
+    font-size: 1.75em;
+}
+
+#footer .icons a {
+    -moz-transition: opacity 0.2s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0.35;
+}
+
+#footer .icons a:hover {
+    opacity: 0.75;
+}
+
+.icon {
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+}
+
+.icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+}
+
+.icon>.label {
+    display: none;
+}
+
+.icon.major {
+    background: #666;
+    border-radius: 100%;
+    color: #ffffff;
+    cursor: default;
+    display: inline-block;
+    height: 5.5em;
+    line-height: 5.5em;
+    margin: 0 0 2em 0;
+    width: 5.5em;
+}
+
+.icon.major:before {
+    font-size: 2.5em;
+}
+
+.icon.major.accent1 {
+    background: #666;
+    color: #ffffff;
+}
+
+.icon.major.accent2 {
+    background: #e89980;
+    color: #ffffff;
+}
+
+.icon.major.accent3 {
+    background: #7fcdb8;
+    color: #ffffff;
+}
+
+.icon.major.accent4 {
+    background: #90b0ba;
+    color: #ffffff;
+}
+
+.icon.major.accent5 {
+    background: #e5cb95;
+    color: #ffffff;
+}
+
+#nav {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+    z-index: 999;
+}
+
+#hobbies {
+    position: absolute;
+    bottom: 0;
+    height: 6rem;
+}
+
+#nombre {
+    color: ghostwhite;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
 #links a {
     cursor: pointer;
     opacity: 1;
@@ -78,28 +204,22 @@ article.school-component {
 }
 
 #links a:hover {
-opacity: .5;
-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
-transition-duration: .5s;
+    opacity: .5;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transition-duration: .5s;
 }
 
-#insta{
-    width: 6.5rem !important; 
-    height: 6.5rem !important;  
+#insta {
+    width: 7.5rem !important;
+    height: 7.5rem !important;
 }
 
-#links img{
-    width: 5rem; 
-    height: 5rem;
+#links img {
+    width: 6rem;
+    height: 6rem;
 }
 
-header a{
-    cursor: pointer;  
-}
-
-#nombre{
-    color: ghostwhite;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
+header a {
+    cursor: pointer;
 }
