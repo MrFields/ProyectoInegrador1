@@ -51,12 +51,8 @@
                 }
             })
         }
-        $(function () //Esto es el windows.onload()
-            {
-                Swal.fire('Para continuar por favor elija el tramite que desea realizar ');
-            });
     </script>
-    <title>Formulario</title>
+    <title>Tramites</title>
 
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
@@ -79,8 +75,16 @@
             </div>
         </nav>
     </header>
-    <main>
-        <button type="button" class="btn btn-secondary btn-lg" onclick="TRA()">Tramites</button>
+    <main class="container-fluid">
+
+                  <div class="jumbotron">
+                        <h1 class="display-4">Escoja su tramite</h1>
+                        <p class="lead">Aqui se va a explicar la dinamica de la relacion abogado-cliente (metodos de pago, comunicacion, etc)</p>
+                        <hr class="my-4">
+                        <p>Seleccione su tramite</p>
+                        <button type="button" class="btn btn-secondary btn-lg" onclick="TRA()">Tramites</button>
+                      </div>
+    
         <!--<div class="dropdown show">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -96,7 +100,7 @@
         </div><section class="Tramite">Tramite</section>
         -->
 
-        <section class="container">
+        <section>
             <div>
                 <h2 id="title" class="text-justify"></h2>
                 <p id="description" class="text-justify"></p>
