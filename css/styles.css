@@ -69,18 +69,19 @@ article.school-component {
     width: 5rem;
     height: 5rem;
     border-radius: 5rem;
-    border: 3px solid rgb(177, 167, 30);
+    border: 3px solid #ffc107;
     margin: .3rem;
     margin-right: 1rem;
 }
- .nav-menu{
-     font-size: 1.5rem;
-     color: whitesmoke !important;
-    
- }
+
+.nav-menu {
+    font-size: 1.5rem;
+    color: whitesmoke !important;
+
+}
 
 .copyright {
-    color: #999;
+    color: rgb(80, 80, 80);
     font-size: 0.9em;
     font-weight: bold;
     line-height: 1em;
@@ -88,10 +89,11 @@ article.school-component {
     padding: 0;
     text-align: center;
 }
-.carousel-mine{
-   max-height: 2rem;
-   width: 100%;
-   margin-bottom: 2rem;
+
+.carousel-mine {
+    max-height: 2rem;
+    width: 100%;
+    margin-bottom: 2rem;
 }
 
 #footer .icons a {
@@ -111,7 +113,7 @@ article.school-component {
     text-decoration: none;
     border-bottom: none;
     position: relative;
- 
+
 }
 
 .icon:before {
@@ -160,7 +162,7 @@ article.school-component {
 }
 
 #nombre {
-    color:rgb(177, 167, 30);
+    color: #ffc107;
     font-weight: bold;
     font-family: 'Quicksand', sans-serif;
 }
@@ -195,7 +197,7 @@ header a {
 .btn {
     margin: 1rem;
 }
-.Tramite
-{
+
+.Tramite {
     width: 50rem;
 }
