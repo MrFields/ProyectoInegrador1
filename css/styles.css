@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Mukta|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 @import url("font-awesome.min.css");
 
 html {
     scroll-behavior: smooth;
-
 }
 
 body {
-    background: rgba(192, 192, 192, 0.75);
-    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: rgba(95, 94, 94, 0.575);
+    font-family: 'Quicksand', sans-serif;
 }
 
 p {
@@ -65,12 +65,19 @@ article.school-component {
     font-weight: bold;
 }
 
-.logo-size {
+.logo-nav {
     width: 5rem;
     height: 5rem;
     border-radius: 5rem;
-    border: 3px solid rgb(20, 20, 133);
+    border: 3px solid rgb(177, 167, 30);
+    margin: .3rem;
+    margin-right: 1rem;
 }
+ .nav-menu{
+     font-size: 1.5rem;
+     color: whitesmoke !important;
+    
+ }
 
 .copyright {
     color: #999;
@@ -81,28 +88,10 @@ article.school-component {
     padding: 0;
     text-align: center;
 }
-
-ul.icons {
-    cursor: default;
-    list-style: none;
-    padding-left: 0;
-}
-
-ul.icons li {
-    display: inline-block;
-    padding: 0 1.25em 0 0;
-}
-
-ul.icons li:last-child {
-    padding-right: 0;
-}
-
-ul.icons li .icon {
-    color: inherit;
-}
-
-ul.icons li .icon:before {
-    font-size: 1.75em;
+.carousel-mine{
+   max-height: 2rem;
+   width: 100%;
+   margin-bottom: 2rem;
 }
 
 #footer .icons a {
@@ -111,6 +100,7 @@ ul.icons li .icon:before {
     -ms-transition: opacity 0.2s ease-in-out;
     transition: opacity 0.2s ease-in-out;
     opacity: 0.35;
+    color: #999;
 }
 
 #footer .icons a:hover {
@@ -121,14 +111,15 @@ ul.icons li .icon:before {
     text-decoration: none;
     border-bottom: none;
     position: relative;
+ 
 }
 
 .icon:before {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
+    color: #999;
     text-transform: none !important;
 }
 
@@ -139,7 +130,7 @@ ul.icons li .icon:before {
 .icon.major {
     background: #666;
     border-radius: 100%;
-    color: #ffffff;
+    color: #999;
     cursor: default;
     display: inline-block;
     height: 5.5em;
@@ -152,30 +143,6 @@ ul.icons li .icon:before {
     font-size: 2.5em;
 }
 
-.icon.major.accent1 {
-    background: #666;
-    color: #ffffff;
-}
-
-.icon.major.accent2 {
-    background: #e89980;
-    color: #ffffff;
-}
-
-.icon.major.accent3 {
-    background: #7fcdb8;
-    color: #ffffff;
-}
-
-.icon.major.accent4 {
-    background: #90b0ba;
-    color: #ffffff;
-}
-
-.icon.major.accent5 {
-    background: #e5cb95;
-    color: #ffffff;
-}
 
 #nav {
     position: fixed;
@@ -193,9 +160,9 @@ ul.icons li .icon:before {
 }
 
 #nombre {
-    color: ghostwhite;
+    color:rgb(177, 167, 30);
     font-weight: bold;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 #links a {

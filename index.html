@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Mukta|Roboto" rel="stylesheet">
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.js"></script>
+  <script src="js/email.js"></script>
   <title>Martesco International</title>
 
   <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
@@ -24,6 +25,8 @@
 
 <body>
   <header>
+
+    <!--d
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100" id="nav">
       <a href="http://martescointernational.blogspot.com/" target="_blank"><img src="img/logo2.jpeg" alt="Martesco"
           class="logo-size m-2"></a>
@@ -53,31 +56,57 @@
         </div>
       </div>
     </nav>
-  </header>
-  <main class="container-fluid">
+-->
+<nav class="navbar navbar-expand-lg nav-menu w-100" id="nav" style="background-color: #000000;" >
+    <img src="img/logo2.jpeg" class="d-inline-block align-top logo-nav" alt="">
+    <span id="nombre" class="navbar-brand disabled" href="#">Martesco International Services S.C.</span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse nav-menu" id="navbarText">
+      <ul class="navbar-nav mr-2 m-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Bienvenida <span class="sr-only nav-menu">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-item nav-link">|</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#nosotros">Nosotros</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-item nav-link">|</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#servicios">Servicios</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-item nav-link">|</a>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#consultas">Consultas</a>
+          </li>
+      </ul>
+      <span class="navbar-text">
+          <a href="formulario.html" target="_blank"><button class="btn btn-outline-warning" type="button">TRAMITES</button></a>
+      </span>
+    </div>
+  </nav>
 
+  </header>
+  <!--Comienza Carrusel-->
+  <main class="container-fluid">
+  
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active" data-interval="10000">
-              <img src="img/1.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </div>
+              <img src="img/intro.jpeg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="img/6.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </div>
+              <img src="img/mision.jpeg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="img/5.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </div>
+              <img src="img/vision.jpeg" class="d-block w-100" alt="...">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -89,9 +118,17 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
+<!--Finaliza Carrusel-->
 
+<!--Informacion en texto-->
+<section>
+    <h1 id="nosotros">&nbsp;</h1>
+  </section>
+  <br><br>
+  <h1>Nosotros</h1>
+  <hr>
     <section class="m-3">
-      <h2>Bienvenido a Martesco International!</h2> <br>
+   
       <p class="text-justify">
         Somos un despacho jurídico conformado por abogados titulados y especializados en la materia de
         derecho migratorio mexicano, que de manera eficaz, eficiente, transparente y garantizada atenderemos
@@ -104,29 +141,7 @@
         garantizaría que su trámite sea resuelto a su favor.
       </p>
     </section>
-    <section class="text-center relative">
-      <div class="card inline-block-fix m-3" style="width: 18rem;">
-        <img src="img/user.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-        </div>
-      </div>
 
-      <div class="card inline-block-fix m-3" style="width: 18rem;">
-        <img src="img/user.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            conte.</p>
-        </div>
-      </div>
-    </section>
-    <section>
-      <h1 id="nosotros">&nbsp;</h1>
-    </section>
-    <br><br>
-    <h1>Nosotros</h1>
-    <hr>
     <section>
       <div class="media">
         <img src="img/user.png" class="align-self-center mr-3 img-thumbnail" alt="..."
@@ -227,8 +242,8 @@
 
               </p>
             </div>
-
           </div>
+
           <!--Contenedor de ubicacion y direccion de la escuela (Derecha)-->
           <div class="col-md-6 col-sm-12 school-component-height">
             <div class="row h-100 px-3">
@@ -257,24 +272,18 @@
         </div>
       </article>
     </section>
-
+<!--Finaliza informacion texto-->
     <section>
       <h1 id="contacto">&nbsp;</h1>
     </section>
   </main>
-
+  <!--Formulario Contacto-->
   <footer class="container">
-
-      <div>
-
+      <div id="container-post">
           <div class="row">
-  
               <div class="col-xl-8 offset-xl-2">
- 
                   <form id="contact-form" method="post" action="php/contact.php" role="form">
-  
                       <div class="messages"></div>
-  
                       <div class="controls">
                           <div class="row">
                               <div class="col-lg-6">
@@ -293,49 +302,50 @@
                                       <div class="help-block with-errors"></div>
                                   </div>
                               </div>
+                               <div class="col-lg-6">
+                                  <div class="form-group">
+                                      <label for="form_name">Asunto *</label>
+                                      <input id="asunto" type="text" name="asunto" class="form-control" placeholder="Cual es su pregunta?" required="required"
+                                          data-error="Firstname is required.">
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                              </div>
                           </div>
                           <div class="form-group">
                               <label for="form_message">Mensaje *</label>
-                              <textarea id="form_message" name="message" class="form-control" placeholder="Escriba aqui" rows="4" required="required"
+                              <textarea id="mensaje" name="mensaje" class="form-control" placeholder="Escriba aqui" rows="4" required="required"
                                   data-error="Por favor, escriba un mensaje"></textarea>
                               <div class="help-block with-errors"></div>
                           </div>
 
-                          <input type="submit" class="btn btn-success btn-send" value="Enviar!">
-  
+                          <button id="submit" type="submit" class="btn btn-success btn-send" value="Enviar!">Enviar</button>
                           <p class="text-muted">
                               <strong>*</strong> Estos campos son necesarios
                           </p>
-  
                       </div>
-  
                   </form>
-  
               </div>
               <!-- /.8 -->
-  
           </div>
           <!-- /.row-->
-  
       </div>
       <!-- /.container-->
 
+      <!--Finaliza formulario-->
       <script src="php/contact.php"></script>
 
+      <!--Redes sociales y Copyright-->
     <section class="icons text-center">
       <a href="https://www.facebook.com/martescois/" target="_blank"> <img src="img/icons/facebook.svg" alt="Facebook icon"></a>
       <a href="https://twitter.com/martescois"  target="_blank"><img src="img/icons/twitter.svg" alt="Twitter Icon"></a>
       <a href=""><img src="img/icons/instagram.svg" alt="Instagram Icon"></a>
-    </section>
-         
-      
-
+    </section>     
     <ul class="copyright text-center">
       <li>&copy; Martesco International Services S.C. Todos los derechos reservados.</li>
     </ul>
     <br>
   </footer>
-
+<!--Fin de redes socilaes y copyright-->
 </body>
 
 </html>
