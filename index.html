@@ -95,7 +95,7 @@
     <section>
       <h1 id="nosotros">&nbsp;</h1>
     </section>
-    <br>
+    <br><br>
     <h1>Nosotros</h1>
     <hr>
     <section class="m-3">
@@ -211,19 +211,20 @@
       <h1 id="contacto">&nbsp;</h1>
     </section>
   </main>
+
   <!--Formulario Contacto-->
   <footer class="container">
     <div id="container-post">
       <div class="row">
         <div class="col-xl-8 offset-xl-2">
-          <form id="contact-form" method="post" action="php/contact.php" role="form">
+          <form id="contact-form" role="form" action="https://formspree.io/dm.danmarlo@gmail.com" method="POST">
             <div class="messages"></div>
             <div class="controls">
               <div class="row">
                 <div class="col-lg-6">
                   <div class="form-group">
                     <label for="form_name">Nombre *</label>
-                    <input id="nombre" type="text" name="nombre" class="form-control"
+                    <input id="nombre" type="text" name="name" class="form-control"
                       placeholder="Por favor escriba su nombre" required="required" data-error="Firstname is required.">
                     <div class="help-block with-errors"></div>
                   </div>
@@ -240,7 +241,7 @@
                 <div class="col-lg-6">
                   <div class="form-group">
                     <label for="form_name">Asunto *</label>
-                    <input id="asunto" type="text" name="asunto" class="form-control" placeholder="Cual es su pregunta?"
+                    <input id="asunto" type="text" name="subject" class="form-control" placeholder="Cual es su pregunta?"
                       required="required" data-error="Firstname is required.">
                     <div class="help-block with-errors"></div>
                   </div>
@@ -248,12 +249,12 @@
               </div>
               <div class="form-group">
                 <label for="form_message">Mensaje *</label>
-                <textarea id="mensaje" name="mensaje" class="form-control" placeholder="Escriba aqui" rows="4"
+                <textarea id="mensaje" name="message" class="form-control" placeholder="Escriba aqui" rows="4"
                   required="required" data-error="Por favor, escriba un mensaje"></textarea>
                 <div class="help-block with-errors"></div>
               </div>
 
-              <button id="submit" type="submit" class="btn btn-success btn-send" value="Enviar!">Enviar</button>
+              <button id="submit" type="submit" class="btn btn-success btn-send">Enviar</button>
               <p class="text-muted">
                 <strong>*</strong> Estos campos son necesarios
               </p>
@@ -267,7 +268,7 @@
     <!-- /.container-->
 
     <!--Finaliza formulario-->
-    <script src="php/contact.php"></script>
+
 
     <!--Redes sociales y Copyright-->
     <section class="icons text-center">
