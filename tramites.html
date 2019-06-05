@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="js/JQueryUI/jquery-ui.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/tempusdominus-bootstrap-4.min.css">
+    <link rel="icon" href="img/icons/martesco_favicon.ico" type="image/x-icon">
 
     <script src="js/jquery.js"></script>
     <script src="js/JQueryUI/jquery-ui.js"></script>
@@ -23,7 +24,7 @@
             const {
                 value: fruit
             } = Swal.fire({
-                title: '<section class="Tramite">Tramites</section>',
+                title: '<section class="Tramite">Trámites</section>',
                 input: 'select',
                 inputOptions: {
                     'Inscripcion para Constancia Empleador': 'Inscripcion para Constancia Empleador                              ',
@@ -44,7 +45,7 @@
                             resolve(VTUF())
                         } else if (value ===
                             'Cambio de residencia temporal estudiante a residente temporal con permiso de trabajo'
-                            ) {
+                        ) {
                             resolve(CCRT())
                         }
                     })
@@ -61,7 +62,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg nav-menu w-100" id="nav" style="background-color: #000000;">
-            <img src="img/logo2.jpeg" class="d-inline-block align-top logo-nav" alt="">
+            <img src="img/logo2.png" class="d-inline-block align-top logo-nav" alt="">
             <span id="nombre" class="navbar-brand disabled" href="#">Martesco International Services S.C.</span>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,33 +78,36 @@
     </header>
     <main class="container-fluid">
 
-                  <div class="jumbotron">
-                        <h1 class="display-4">Escoja su tramite</h1>
-                        <p class="lead">Aqui se va a explicar la dinamica de la relacion abogado-cliente (metodos de pago, comunicacion, etc)</p>
-                        <hr class="my-4">
-                        <p>Seleccione su tramite</p>
-                        <button type="button" class="btn btn-secondary btn-lg" onclick="TRA()">Tramites</button>
-                      </div>
-    
-        <!--<div class="dropdown show">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Tramites
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" id="title1" onclick="CE()">Inscripcion para Constanicia Empleador</a>
-                <a class="dropdown-item" onclick="VTOT()">Visa Temporal por Oferta de Trabajo</a>
-                <a class="dropdown-item" onclick="VTUF()">Visa Temporal por Unidad Familiar</a>
-                <a class="dropdown-item" onclick="CCRT()">Cambio de Condición de residencia temporal
-                    estudiante a residente temporal con permiso de trabajo</a>
-            </div>
-        </div><section class="Tramite">Tramite</section>
-        -->
+        <div class="jumbotron">
+            <h1 class="display-4 negritas">Escoja su trámite</h1>
+            <p class="lead word-size font-black">
+                A fin de abatir los costos y tiempos de realización de los trámites migratorios hemos hecho un esfuerzo
+                para que directamente a través de nuestra página las personas puedan subir los documentos necesarios
+                para los trámites migratorios mas comunes.
 
-        <section>
+                Préstamos nuestros servicios de la siguiente manera:
+                <ol class="word-size font-black">
+                    <li>El cliente escanea y sube la información (documentos) de su trámite.</li>
+
+                    <li>El despacho realiza y redacta toda la papelería necesaria para su trámite y se envia por
+                        correo electrónico.</li>
+
+                    <li>El cliente lo imprime y recaba las firmas necesarias.</li>
+
+                    <li>El despacho recoge la papeleria ya firmada al domicilio del cliente para ingresar
+                        inmediatamente el trámite ante el Instituto Nacional de Migración.</li>
+                </ol>
+            </p>
+            <hr class="my-4">
+            <p>Seleccione su tramite</p>
+            <button type="button" class="btn btn-secondary btn-lg" onclick="TRA()">Tramites</button>
+        </div>
+
+        <section class="container">
             <div>
-                <h2 id="title" class="text-justify"></h2>
-                <p id="description" class="text-justify"></p>
+                <h2 id="title" class="text-justify negritas"></h2>
+                <hr>
+                <p id="description" class="text-justify word-size font-black"></p>
             </div>
 
             <div id="archivos">

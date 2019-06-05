@@ -49,7 +49,7 @@ function VTOT() {
    $('#title').html(
       "Visa Temporal por Oferta de Trabajo"
    );
-   $('#description').html("Te sirve para viajar a México, presentarte en los lugares autorizados al tránsito internacional" +
+   $('#description').html("Te sirve para viajar a México, presentarte en los lugares autorizados al tránsito internacional " +
     "de personas y tu propósito sea permanecer en territorio mexicano por un período mayor a 180 días y no mayor a 4 años.");
    $('#archivos').html(
       '<h3>Favor de proporcionar la informacion siguiente</h3>' +
@@ -92,8 +92,8 @@ function VTUF()
    );
    
    $("#description").html(
-      "¿Eres persona extranjera titular de la condición de estancia de visitante, deseas residir de manera temporal"+ 
-      "en el país y tienes vínculo con mexicano o persona extranjera residente temporal o permanente?."
+      "Para personas extranjeras titulares de la condición de estancia de visitante, que desean residir de manera temporal "+ 
+      "en el país y tienen vínculo con mexicano o persona extranjera residente temporal o permanente."
    );
    $("#archivos").html(
       '<h3>Favor de proporcionar la informacion siguiente</h3>' +
@@ -129,13 +129,13 @@ function VTUF()
 function CCRT()
 {
    $('#title').html(
-      "Cambio de Condición de residencia temporal"+
+      "Cambio de Condición de residencia temporal "+
       "estudiante a residente temporal con permiso de trabajo"
    );
    
    $("#description").html
    (
-      "¿Eres persona extranjera titular de la condición de estancia de residente temporal estudiante y deseas cambiar a residente temporal?."
+      "Para personas extranjeras titulares de la condición de estancia de residente temporal estudiante y que desean cambiar a residente temporal."
    );
    $("#archivos").html
    (
@@ -181,10 +181,6 @@ function CCRT()
       '</div>' +
       '<div class="form-group">' +
       '<label class="negritas" for="exampleFormControlFile1"> •Carta de Aviso de Datos personales y Notificaciones electrónicas.</label>' +
-      '<input type="file" class="form-control-file" id="exampleFormControlFile1">' +
-      '</div>' +
-      '<div class="form-group">' +
-      '<label class="negritas" for="exampleFormControlFile1"> •Tres fotografías tipo infantil (tamaño 2.5x3 cm.), dos de frente y una de perfil derecho de la cara, fondo blanco, con la frente y las orejas descubiertas, sin aretes y sin anteojos. No instantáneas.</label>' +
       '<input type="file" class="form-control-file" id="exampleFormControlFile1">' +
       '</div>' +
       '<input type="submit" class="btn btn-info" href="javascript: submitform();">' +

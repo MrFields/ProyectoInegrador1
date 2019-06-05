@@ -36,6 +36,13 @@ article.school-component {
 .word-break {
     word-break: break-all;
 }
+.word-size{
+    font-size: 1.5rem;
+    
+}
+.font-black{
+    color: black;
+}
 
 .map {
     background: gray;
@@ -69,7 +76,7 @@ article.school-component {
     width: 5rem;
     height: 5rem;
     border-radius: 5rem;
-    border: 3px solid #ffc107;
+    border: 3px solid #e5cc7a;
     margin: .3rem;
     margin-right: 1rem;
 }

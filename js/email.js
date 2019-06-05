@@ -4,32 +4,30 @@ $(document).ready(function(){
 
 
     var email = $('#email').val();
-    var nombre = $('#nombre').val();
     var asunto = $('#asunto').val();
     var mensaje = $('#mensaje').val();
-    var estatusElm = $('#asunto');
-    estatusElm.empty();
+ 
 
     if(email.length > 5 && email.includes('@') && email.includes('.'))
     {
-        estatusElm.append('<div>Email valido</div>');
+        console.log(email);
     } else {
         event.preventDefault();
-        estatusElm.append('<div>Email invalido</div>');
+        alert('Email invalido, favor de verificar su correo');
     }
 
-    if(asunto.length > 2){
-        estatusElm.append('<div>Asunto valido</div>');
+    if(asunto.length > 5){
+        console.log(asunto);
     }else{
         event.preventDefault();
-        estatusElm.append('<div>Asunto invalido</div>');
+        alert('Asunto muy corto, favor de ser mas descriptivo');
     }
 
-    if(mensaje.length > 20){
-        estatusElm.append('<div>Mensaje valido</div>');
+    if(mensaje.length > 15){
+        console.log(mensaje.length);
     }else{
         event.preventDefault();
-        estatusElm.append('<div>Mensaje invalido</div>');
+        alert('Mensaje muy corto, favor de ser mas descriptivo');
     }
    }); 
 
