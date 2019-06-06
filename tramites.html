@@ -75,7 +75,9 @@
                     'El correo a sido enviado con exito',
                     'Presiona el boton para continuar',
                     'success'
-                    )
+                    ).then((result) => {
+                        document.getElementById("myform").reset();
+                    })
                    
                 ){
                     console.log('I was closed by the timer')
