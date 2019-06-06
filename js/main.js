@@ -39,10 +39,10 @@ function CE() {
       '<label class="negritas" for="exampleFormControlFile1"> •Lista de empleados y sus nacionalidades.</label>' +
       '<input type="file" class="form-control-file" id="exampleFormControlFile1">' +
       '</div>' +
-      '<input type="submit" class="btn btn-info" href="javascript: submitform();">' +
+      '  <button type="button" class="btn btn-primary" onclick="SendM();">Enviar</button>' +
       '</form>'
    );
-
+   
 }
 
 function VTOT() {
@@ -81,7 +81,7 @@ function VTOT() {
       '</div>' +
       '<div class="form-group">' +
       '</div>' +
-      '<input type="submit" class="btn btn-info" href="javascript: submitform();">' +
+      '    <button  type="button" class="btn btn-primary" onclick="SendM();" >Enviar</button>' +
       '</form>'
    );
 }
@@ -122,7 +122,7 @@ function VTUF()
       '</div>' +
       '<div class="form-group">' +
       '</div>' +
-      '<input type="submit" class="btn btn-info" href="javascript: submitform();">' +
+      '    <button  type="button" class="btn btn-primary" onclick="SendM();" >Enviar</button>' +
       '</form>'
    );
 }
@@ -183,7 +183,7 @@ function CCRT()
       '<label class="negritas" for="exampleFormControlFile1"> •Carta de Aviso de Datos personales y Notificaciones electrónicas.</label>' +
       '<input type="file" class="form-control-file" id="exampleFormControlFile1">' +
       '</div>' +
-      '<input type="submit" class="btn btn-info" href="javascript: submitform();">' +
+      '    <button  type="button" class="btn btn-primary" onclick="SendM();" >Enviar</button>' +
       '</form>'
    )
 }
