@@ -54,11 +54,34 @@
         }
         function SendM()
         {
-            Swal.fire(
-            'El correo a sido enviado con exito',
-            'Presiona el boton para continuar',
-            'success'
-            )
+            let timerInterval
+                Swal.fire({
+                title: 'Validando Correo!',
+                html: 'El correo se esta validando<strong></strong>.',
+                timer: 1000,
+                onBeforeOpen: () => {
+                    Swal.showLoading()
+                    timerInterval = setInterval(() => {
+                    Swal.getContent().querySelector('strong')
+                        .textContent = Swal.getTimerLeft()
+                    }, 100)
+                },
+                onClose: () => {
+                    clearInterval(timerInterval)
+                }
+                }).then((result) => {
+                if (
+                    Swal.fire(
+                    'El correo a sido enviado con exito',
+                    'Presiona el boton para continuar',
+                    'success'
+                    )
+                   
+                ){
+                    console.log('I was closed by the timer')
+                }
+                })
+           
         }
     </script>
     <title>Tramites</title>
